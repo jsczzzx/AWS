@@ -70,9 +70,10 @@ button:focus-visible {
 
 .container-img {
     display: flex;
-    flex: 2;
-    justify-content: center;   /* vertically center */
-    align-items: center;       /* horizontally center */
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-start;  
+    align-items: center; 
 }
 
 .container-img img {
@@ -84,6 +85,5 @@ button:focus-visible {
 .container-row {
     display: flex;
     gap: 20px;
-    align-items: center;     /* vertical alignment */
 }
 

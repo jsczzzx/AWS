@@ -5,6 +5,7 @@ import './App.css'
 import S3 from './components/S3/S3'
 import Overview from './components/Overview/Overview'
 import { Route, Routes } from 'react-router-dom'
+import CloudFront from './components/CloudFront/CloudFront'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Overview />} />
       <Route path="/S3" element={<S3 />} />
+      <Route path="/CloudFront" element={<CloudFront />} />
 
     </Routes>
   )

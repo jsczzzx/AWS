@@ -23,7 +23,9 @@ export default function Overview() {
                     </ul>
                     <h2>C. Networking & Delivery</h2>
                     <ul>
-                        <li>CloudFront → Global CDN to reduce latency</li>
+                        <li>
+                            <Link to={'/CloudFront'}>CloudFront → Global CDN to reduce latency</Link>
+                        </li>
                         <li>Route 53 → DNS</li>
                         <li>VPC → private networks for security</li>
                     </ul>
