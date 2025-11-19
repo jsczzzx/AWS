@@ -9,7 +9,9 @@ export default function Overview() {
                 <div className="container-text">
                     <h2>A. Compute</h2>
                     <ul>
-                        <li>EC2 → VMs for backend apps</li>
+                        <li>
+                            <Link to={'/EC2'}>EC2 → VMs for backend apps</Link>
+                        </li>
                         <li>ECS / Fargate → Container orchestration</li>
                         <li>Lambda → Serverless compute</li>
                     </ul>
@@ -32,7 +34,9 @@ export default function Overview() {
                     <h2>D. Security & Identity</h2>
                     <ul>
                         <li>IAM → granular permissions</li>
-                        <li>Cognito → user authentication</li>
+                        <li>
+                            <Link to={'/Cognito'}>Cognito → user authentication</Link>
+                        </li>
                         <li>KMS → encryption keys</li>
                         <li>WAF + Shield → protect from attacks</li>
                     </ul>

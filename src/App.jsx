@@ -6,6 +6,8 @@ import S3 from './components/S3/S3'
 import Overview from './components/Overview/Overview'
 import { Route, Routes } from 'react-router-dom'
 import CloudFront from './components/CloudFront/CloudFront'
+import EC2 from './components/EC2/EC2'
+import Cognito from './components/Cognito/Cognito'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +17,8 @@ function App() {
       <Route path="/" element={<Overview />} />
       <Route path="/S3" element={<S3 />} />
       <Route path="/CloudFront" element={<CloudFront />} />
+      <Route path="/EC2" element={<EC2 />} />
+      <Route path="/Cognito" element={<Cognito />} />
 
     </Routes>
   )
