@@ -94,15 +94,14 @@ export default function Cognito() {
       </section>
 
       <section>
-        <div className="container-row">
-          <div className="container-text">
-            <h2>Example</h2>
+          <h2>Example</h2>
+          <div className="container-row">
+            <div className="container-img">
+                <img src={img02}/>
+                <img src={img03}/>
+            </div>
+            <div className="container-text"></div>
           </div>
-          <div className="container-img">
-            <img src={img02} />
-            <img src={img03} />
-          </div>
-        </div>
       </section>
 
     </>
