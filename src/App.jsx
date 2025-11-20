@@ -11,11 +11,13 @@ import Cognito from './components/Cognito/Cognito'
 import Database from './components/Database/Database'
 import ECS from './components/ECS/ECS'
 import Lambda from './components/Lambda/Lambda'
+import Intro from './components/Intro/Intro'
 
 function App() {
 
   return (
     <Routes>
+      <Route path="/Intro" element={<Intro />} />
       <Route path="/" element={<Overview />} />
       <Route path="/S3" element={<S3 />} />
       <Route path="/CloudFront" element={<CloudFront />} />
