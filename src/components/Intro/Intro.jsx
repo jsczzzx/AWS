@@ -81,44 +81,6 @@ export default function Intro() {
         </div>
       </section>
 
-      {/* 3. Global Infrastructure */}
-      <section>
-        <div className="container-row">
-          <div className="container-text">
-            <h2>AWS Global Infrastructure</h2>
-            <p>
-              AWS operates a global infrastructure designed for reliability,
-              redundancy, and low latency. It is composed of Regions,
-              Availability Zones, and Edge Locations.
-            </p>
-
-            <h3>Regions</h3>
-            <ul>
-              <li>Geographical areas around the world (e.g., us-east-1)</li>
-              <li>Each region contains multiple isolated Availability Zones</li>
-              <li>Customers choose where their data is stored</li>
-            </ul>
-
-            <h3>Availability Zones (AZs)</h3>
-            <ul>
-              <li>Separate data centers within a region</li>
-              <li>Connected by high-speed, low-latency networking</li>
-              <li>Designed for fault isolation and resiliency</li>
-            </ul>
-
-            <h3>Edge Locations</h3>
-            <ul>
-              <li>Used by CloudFront CDN for low-latency global delivery</li>
-              <li>Located in hundreds of cities worldwide</li>
-            </ul>
-          </div>
-
-          <div className="container-img">
-            <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/aws-cloud-technical-professionals/explore-the-aws-global-infrastructure-technical-professionals/images/d88d2fecf52142786da539be437e50df_d-11-f-53-af-b-76-f-482-d-8492-73-be-2-a-630-f-1-b.png" />
-          </div>
-        </div>
-      </section>
-
       {/* 5. AWS Service Categories */}
       <section>
         <div className="container-row">
@@ -155,6 +117,44 @@ export default function Intro() {
 
           <div className="container-img">
             <img src="https://miro.medium.com/1*FLdWyR4EcOhRYZhHVMXF8w.png" />
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Global Infrastructure */}
+      <section>
+        <div className="container-row">
+          <div className="container-text">
+            <h2>AWS Global Infrastructure</h2>
+            <p>
+              AWS operates a global infrastructure designed for reliability,
+              redundancy, and low latency. It is composed of Regions,
+              Availability Zones, and Edge Locations.
+            </p>
+
+            <h3>Regions</h3>
+            <ul>
+              <li>Geographical areas around the world (e.g., us-east-1)</li>
+              <li>Each region contains multiple isolated Availability Zones</li>
+              <li>Customers choose where their data is stored</li>
+            </ul>
+
+            <h3>Availability Zones (AZs)</h3>
+            <ul>
+              <li>Separate data centers within a region</li>
+              <li>Connected by high-speed, low-latency networking</li>
+              <li>Designed for fault isolation and resiliency</li>
+            </ul>
+
+            <h3>Edge Locations</h3>
+            <ul>
+              <li>Used by CloudFront CDN for low-latency global delivery</li>
+              <li>Located in hundreds of cities worldwide</li>
+            </ul>
+          </div>
+
+          <div className="container-img">
+            <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/aws-cloud-technical-professionals/explore-the-aws-global-infrastructure-technical-professionals/images/d88d2fecf52142786da539be437e50df_d-11-f-53-af-b-76-f-482-d-8492-73-be-2-a-630-f-1-b.png" />
           </div>
         </div>
       </section>
