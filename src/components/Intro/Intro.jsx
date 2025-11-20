@@ -1,7 +1,7 @@
 export default function Intro() {
   return (
     <>
-      <h1>Amazon Web Services (AWS)</h1>
+      <h1>Amazon Web Services</h1>
 
       {/* 1. What is AWS */}
       <section>
