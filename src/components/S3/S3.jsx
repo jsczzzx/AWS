@@ -31,6 +31,25 @@ export default function S3() {
         </div>
       </section>
 
+      <section>
+        <div className="container-row">
+          <div className="container-text">
+            <h2>S3 in a Typical Architecture</h2>
+            <p>S3 is used as the storage backbone in most AWS architectures:</p>
+            <ul>
+              <li>Static website hosting with CloudFront</li>
+              <li>Storing user-uploaded content (images/videos/files)</li>
+              <li>Backup & disaster recovery storage</li>
+              <li>Data lake for analytics (Athena, EMR, Glue)</li>
+              <li>Application logs and audit data</li>
+            </ul>
+          </div>
+          <div className="container-img">
+            <img src="https://cdn.antstack.com/When_to_Choose_S3_over_Other_AWS_Storage_Solutions_4dc49b497f.png"></img>
+          </div>
+        </div>
+      </section>
+
 
       <section>
         <div className="container-row">
@@ -51,26 +70,6 @@ export default function S3() {
           </div>
         </div>
       </section>
-
-      <section>
-        <div className="container-row">
-          <div className="container-text">
-            <h2>S3 in a Typical Architecture</h2>
-            <p>S3 is used as the storage backbone in most AWS architectures:</p>
-            <ul>
-              <li>Static website hosting with CloudFront</li>
-              <li>Storing user-uploaded content (images/videos/files)</li>
-              <li>Backup & disaster recovery storage</li>
-              <li>Data lake for analytics (Athena, EMR, Glue)</li>
-              <li>Application logs and audit data</li>
-            </ul>
-          </div>
-          <div className="container-img">
-            <img src="https://cdn.antstack.com/When_to_Choose_S3_over_Other_AWS_Storage_Solutions_4dc49b497f.png"></img>
-          </div>
-        </div>
-      </section>
-
 
       <section>
           <h2>Example</h2>
