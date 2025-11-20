@@ -67,6 +67,53 @@ export default function EC2() {
         </div>
       </section>
 
+    {/* 5. What Is ELB */}
+    <section>
+    <div className="container-row">
+        <div className="container-text">
+        <h2>What Is ELB (Elastic Load Balancing)?</h2>
+        <p>
+            Elastic Load Balancing (ELB) automatically distributes incoming traffic 
+            across multiple EC2 instances, containers, or IP targets to ensure 
+            high availability and fault tolerance. It helps your application stay 
+            reliable even if one server becomes overloaded or fails.
+        </p>
+
+        <ul>
+            <li>Distributes traffic across multiple EC2 instances</li>
+            <li>Improves fault tolerance and high availability</li>
+            <li>Supports health checks to route traffic only to healthy targets</li>
+            <li>Works with Auto Scaling for elastic capacity</li>
+            <li>Provides HTTPS termination and security features</li>
+        </ul>
+
+        <h3>Types of Load Balancers</h3>
+        <ul>
+            <li>
+            <strong>ALB (Application Load Balancer)</strong> – Best for HTTP/HTTPS, 
+            routes by URL path, host, headers, etc.
+            </li>
+            <li>
+            <strong>NLB (Network Load Balancer)</strong> – Ultra-fast, handles 
+            millions of requests, best for TCP/UDP.
+            </li>
+            <li>
+            <strong>CLB (Classic Load Balancer)</strong> – Legacy, for EC2-Classic.
+            </li>
+            <li>
+            <strong>GLB (Gateway Load Balancer)</strong> – Specialized for 
+            network appliances (firewalls, IDS/IPS).
+            </li>
+        </ul>
+        </div>
+
+        <div className="container-img">
+        <img src="https://docs.aws.amazon.com/images/elasticloadbalancing/latest/classic/images/load_balancer.png" />
+        </div>
+    </div>
+    </section>
+
+
       {/* 4. What Is Microservice */}
       <section>
         <div className="container-row">
