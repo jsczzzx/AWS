@@ -56,6 +56,31 @@ export default function Intro() {
         </div>
       </section>
 
+      {/* 6. Why AWS Dominates the Cloud Market */}
+      <section>
+        <div className="container-row">
+          <div className="container-text">
+            <h2>Why AWS Dominates the Cloud Market</h2>
+            <ul>
+              <li>First major cloud provider (launched in 2006)</li>
+              <li>Largest global infrastructure footprint</li>
+              <li>Most services and deepest feature set</li>
+              <li>Strong security and compliance frameworks</li>
+              <li>Massive ecosystem of partners, tools, and integrations</li>
+              <li>Proven reliability and performance</li>
+            </ul>
+            <p>
+              AWS's maturity and scale make it the preferred platform for both
+              startups and global enterprises.
+            </p>
+          </div>
+
+          <div className="container-img">
+            <img src="https://cdn.statcdn.com/Infographic/images/normal/18819.jpeg"></img>
+          </div>
+        </div>
+      </section>
+
       {/* 3. Global Infrastructure */}
       <section>
         <div className="container-row">
@@ -134,30 +159,7 @@ export default function Intro() {
         </div>
       </section>
 
-      {/* 6. Why AWS Dominates the Cloud Market */}
-      <section>
-        <div className="container-row">
-          <div className="container-text">
-            <h2>Why AWS Dominates the Cloud Market</h2>
-            <ul>
-              <li>First major cloud provider (launched in 2006)</li>
-              <li>Largest global infrastructure footprint</li>
-              <li>Most services and deepest feature set</li>
-              <li>Strong security and compliance frameworks</li>
-              <li>Massive ecosystem of partners, tools, and integrations</li>
-              <li>Proven reliability and performance</li>
-            </ul>
-            <p>
-              AWS's maturity and scale make it the preferred platform for both
-              startups and global enterprises.
-            </p>
-          </div>
 
-          <div className="container-img">
-            <img src="https://cdn.statcdn.com/Infographic/images/normal/18819.jpeg"></img>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
