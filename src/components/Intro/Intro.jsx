@@ -154,6 +154,7 @@ export default function Intro() {
           </div>
 
           <div className="container-img">
+            <img src="https://cdn.statcdn.com/Infographic/images/normal/18819.jpeg"></img>
           </div>
         </div>
       </section>
