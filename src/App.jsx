@@ -10,6 +10,7 @@ import EC2 from './components/EC2/EC2'
 import Cognito from './components/Cognito/Cognito'
 import Database from './components/Database/Database'
 import ECS from './components/ECS/ECS'
+import Lambda from './components/Lambda/Lambda'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Route path="/Cognito" element={<Cognito />} />
       <Route path="/Database" element={<Database />} />
       <Route path="/ECS" element={<ECS />} />
+      <Route path="/Lambda" element={<Lambda />} />
 
     </Routes>
   )

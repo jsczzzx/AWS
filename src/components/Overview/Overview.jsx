@@ -15,10 +15,10 @@ export default function Overview() {
                             <Link to={'/EC2'}>EC2 → VMs for backend apps</Link>
                         </li>
                         <li>
-                            <Link to={'/ECS'}>ECS / Fargate → Container orchestration</Link>
+                            <Link to={'/ECS'}>ECS → Container orchestration</Link>
                         </li>
                         <li>
-                            <span>Lambda → Serverless compute</span>
+                            <Link to={'/Lambda'}>Lambda → Serverless compute</Link>
                         </li>
                     </ul>
 
@@ -45,7 +45,7 @@ export default function Overview() {
                         </li>
                     </ul>
 
-                    <h2>D. Security & Identity</h2>
+                    <h2>D. Security & Deployment</h2>
                     <ul>
                         <li>
                             <span>IAM → granular permissions</span>
@@ -54,10 +54,10 @@ export default function Overview() {
                             <Link to={'/Cognito'}>Cognito → user authentication</Link>
                         </li>
                         <li>
-                            <span>KMS → encryption keys</span>
+                            <span>CloudWatch → monitoring and observability service</span>
                         </li>
                         <li>
-                            <span>WAF + Shield → protect from attacks</span>
+                            <span>Github Actions → CI/CD pipeline</span>
                         </li>
                     </ul>
 

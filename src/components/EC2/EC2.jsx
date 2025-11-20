@@ -1,3 +1,4 @@
+import img11 from "../../assets/11.png"
 export default function EC2() {
   return (
     <>
@@ -8,93 +9,98 @@ export default function EC2() {
         types.
       </h4>
 
-      <div className="container-row">
-        <div className="container-text">
-
-          <section>
+      {/* 1. What is EC2 */}
+      <section>
+        <div className="container-row">
+          <div className="container-text">
             <h2>What is EC2?</h2>
             <p>
-              Amazon EC2 allows you to launch virtual machines—called EC2
-              instances—with full control over operating system, CPU, memory,
-              networking, and storage. EC2 is a core compute service used in
-              everything from simple web apps to large distributed systems.
+              Amazon EC2 lets you launch virtual machines—called EC2 instances—
+              with full control over operating system, CPU, memory, networking,
+              and storage. EC2 is the foundation of many cloud architectures,
+              offering maximum flexibility and control.
             </p>
-          </section>
+          </div>
 
-          <section>
+          <div className="container-img">
+            <img src="https://www.educative.io/api/edpresso/shot/5757582081785856/image/5707702298738688" />
+          </div>
+        </div>
+      </section>
+
+      {/* 2. Key Features */}
+      <section>
+        <div className="container-row">
+          <div className="container-text">
             <h2>Key Features</h2>
             <ul>
               <li>Wide range of instance types for different workloads</li>
               <li>Supports Linux, Windows, macOS, and custom AMIs</li>
               <li>Elastic Block Store (EBS) for persistent storage</li>
-              <li>Flexible networking with VPC, subnets, and security groups</li>
-              <li>Pay-as-you-go pricing with options for savings (Reserved, Spot)</li>
+              <li>Flexible networking using VPC, subnets, and security groups</li>
+              <li>Pricing options: On-Demand, Reserved, Savings Plans, Spot</li>
             </ul>
-          </section>
+          </div>
 
-          <section>
+          <div className="container-img">
+          </div>
+        </div>
+      </section>
+
+      {/* 3. How EC2 Works */}
+      <section>
+        <div className="container-row">
+          <div className="container-text">
             <h2>How EC2 Works</h2>
             <ul>
-              <li>You choose an AMI (Amazon Machine Image)</li>
-              <li>You select an instance type (CPU, memory, network)</li>
+              <li>Select an AMI (Amazon Machine Image) to define the OS</li>
+              <li>Select instance type (CPU, memory, network)</li>
               <li>Configure networking (VPC, subnets, security groups)</li>
-              <li>Attach EBS volumes (or use ephemeral instance store)</li>
-              <li>Launch and connect via SSH (Linux) or RDP (Windows)</li>
+              <li>Attach EBS volumes for persistent storage</li>
+              <li>Launch and connect using SSH (Linux) or RDP (Windows)</li>
             </ul>
-          </section>
+          </div>
 
-          <section>
-            <h2>EC2 in a Typical Architecture</h2>
-            <p>
-              Most EC2 deployments run inside a multi-tier architecture that
-              improves scalability and reliability:
-            </p>
-            <ul>
-              <li>An Application Load Balancer (ALB) distributes traffic</li>
-              <li>EC2 instances run in private subnets for security</li>
-              <li>
-                Auto Scaling Groups automatically adjust instance count based on
-                demand
-              </li>
-              <li>
-                Multiple Availability Zones ensure high availability and
-                resilience
-              </li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>Communication Between Instances</h2>
-            <p>
-              EC2 instances communicate securely within the VPC using private
-              IP addresses. Security groups control allowed traffic:
-            </p>
-            <ul>
-              <li>App servers can call other EC2 instances or microservices</li>
-              <li>Instances can access RDS databases in private networks</li>
-              <li>Load balancers forward traffic only to healthy instances</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>Typical Architecture Example</h2>
-            <p>A standard EC2-based web application includes:</p>
-            <ul>
-              <li>Route 53 → domain routing</li>
-              <li>Application Load Balancer → public entry point</li>
-              <li>Auto Scaling Group → EC2 instances across 2 AZs</li>
-              <li>Private subnets → application servers</li>
-              <li>RDS/ElastiCache → database & caching layer</li>
-            </ul>
-          </section>
-
+          <div className="container-img">
+            <img src={img11} />
+          </div>
         </div>
+      </section>
 
-        <div className="container-img">
-          <img src="https://d1.awsstatic.com/architecture-diagrams/ArchitectureDiagrams/alb-with-ec2-auto-scaling-group.png" />
-          <img src="https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/ec2-sample-architecture.png" />
+      {/* 4. What Is Microservice */}
+      <section>
+        <div className="container-row">
+          <div className="container-text">
+            <h2>What Is a Microservice?</h2>
+            <p>
+              A microservice is a small, independently deployable component of an
+              application that performs a single business function. Each service
+              has its own codebase, database, and deployment pipeline, allowing
+              teams to develop and scale independently.
+            </p>
+
+            <ul>
+              <li>Independent deployment (deploy one service without affecting others)</li>
+              <li>Loosely coupled, highly maintainable architecture</li>
+              <li>Each service owns its data and logic</li>
+              <li>Scales independently based on traffic patterns</li>
+              <li>
+                Typically deployed using containers (ECS, Fargate, Kubernetes) 
+                or serverless (Lambda)
+              </li>
+            </ul>
+
+            <p>
+              EC2 can run microservices directly, but modern architectures often
+              use ECS/Fargate or Lambda for better scaling and lower ops overhead.
+            </p>
+          </div>
+
+          <div className="container-img">
+            <img src="https://microservices.io/i/Microservice_Architecture.png" />
+          </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
