@@ -8,9 +8,10 @@ import { Route, Routes } from 'react-router-dom'
 import CloudFront from './components/CloudFront/CloudFront'
 import EC2 from './components/EC2/EC2'
 import Cognito from './components/Cognito/Cognito'
+import Database from './components/Database/Database'
+import ECS from './components/ECS/ECS'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <Routes>
@@ -19,6 +20,8 @@ function App() {
       <Route path="/CloudFront" element={<CloudFront />} />
       <Route path="/EC2" element={<EC2 />} />
       <Route path="/Cognito" element={<Cognito />} />
+      <Route path="/Database" element={<Database />} />
+      <Route path="/ECS" element={<ECS />} />
 
     </Routes>
   )
