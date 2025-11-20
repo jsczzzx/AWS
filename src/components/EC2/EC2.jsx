@@ -6,7 +6,7 @@ export default function EC2() {
       <h4>
         Amazon Elastic Compute Cloud (EC2) provides scalable virtual servers in
         the cloud, giving you flexible compute capacity for applications of all
-        types.
+        types. 
       </h4>
 
       {/* 1. What is EC2 */}
